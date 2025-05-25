@@ -1,3 +1,25 @@
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -27,6 +49,8 @@
   float: right;
   margin-top: 6rem;
   margin-right: 4rem;
+  position: relative;
+  animation: slideInFromRight 1.5s ease-out forwards;
 }
 
 .container .good {
@@ -39,6 +63,7 @@
   padding: 0.625rem 1.25rem;
   display: inline-block;
   border-radius: 0.357rem;
+  animation: slideInFromLeft 1.5s ease-out forwards;
 }
 .container .BigFnt {
   font-family: fantasy;
@@ -47,6 +72,8 @@
   margin-top: 7rem;
   letter-spacing: 0.5rem;
   text-shadow: 0.1rem 0.1rem 0.1rem white;
+  position: relative;
+  animation: slideInFromLeft 1.5s ease-out forwards;
 }
 .container .week {
   font-family: fantasy;
@@ -54,6 +81,8 @@
   margin-left: 3rem;
   letter-spacing: 0.5rem;
   text-shadow: 0.1rem 0.1rem 0.1rem white;
+  animation: slideInFromLeft 1.5s ease-out forwards;
+  animation-delay: 0s;
 }
 
 .container .money {
@@ -68,6 +97,7 @@
   position: relative;
   left: 50rem;
   bottom: 2rem;
+  animation: slideInFromRight 1.5s ease-out forwards;
 }
 .inner-circle {
   width: 6rem;
