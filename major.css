@@ -46,14 +46,17 @@ html {
   width: 80px;
   cursor: pointer;
 }
+.BigBur-wrapper {
+  position: relative;
+  animation: slideInFromRight 1.5s ease-out forwards;
+  margin-top: 96px;
+  margin-right: 64px;
+  float: right;
+  width: fit-content;
+}
 .container .BigBur {
   width: 464px;
   height: 384px;
-  float: right;
-  margin-top: 96px;
-  margin-right: 64px;
-  position: relative;
-  animation: slideInFromRight 1.5s ease-out forwards;
 }
 
 .container .good {
@@ -97,9 +100,9 @@ html {
   justify-content: center;
   align-items: center;
   background-color: #8b1a1a;
-  position: relative;
-  left: 50rem;
-  bottom: 2rem;
+  position: absolute;
+  right: 19rem;
+  top: 20rem;
   animation: slideInFromRight 1.5s ease-out forwards;
 }
 .inner-circle {
