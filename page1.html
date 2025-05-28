@@ -16,23 +16,64 @@
       #part3-text {
         font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
       }
+      /* Animation classes with ai */
+      @keyframes slideDown {
+        from {
+          transform: translateY(-100px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+      .animate-slide-down {
+        animation: slideDown 0.8s ease-out forwards;
+      }
+
+      .animate-delay-1 {
+        animation-delay: 0.2s;
+        opacity: 0;
+      }
+
+      .animate-delay-2 {
+        animation-delay: 0.4s;
+        opacity: 0;
+      }
+
+      .animate-delay-3 {
+        animation-delay: 0.6s;
+        opacity: 0;
+      }
+
+      .animate-delay-4 {
+        animation-delay: 0.8s;
+        opacity: 0;
+      }
     </style>
   </head>
   <body>
     <!-- content 1 -->
-    <div class="w-full h-screen bg-black">
-      <div class="absolute left-8 top-36">
-        <p class="text-white text-5xl text-shadow-red-500" id="head-text">
+    <div class="w-full h-screen bg-black animate-slide-down">
+      <div class="absolute left-8 top-36 animate-slide-down animate-delay-1">
+        <p
+          class="text-white text-5xl text-shadow-red-500 animate-slide-down animate-delay-2"
+          id="head-text"
+        >
           TRY IT TODAY
         </p>
-        <p class="text-white text-7xl text-shadow-red-500" id="head-text">
+        <p
+          class="text-white text-7xl text-shadow-red-500 animate-slide-down animate-delay-3"
+          id="head-text"
+        >
           MOST POPULAR BURGER
         </p>
       </div>
       <img
         src="https://img-web.storage.c2.liara.space/page1-img/Capa%201-2.png"
         alt="burger"
-        class="w-full h-full object-contain object-right relative top-8"
+        class="w-full h-full object-contain object-right relative top-8 animate-slide-down animate-delay-4"
       />
     </div>
     <!-- content 2 -->
@@ -195,6 +236,7 @@
         <img
           src="https://img-web.storage.c2.liara.space/page1-img/2663812.png"
           alt="burger"
+          class="hover:border-4 hover:border-white transition-discrete rounded-full duration-300 p-1 cursor-pointer"
         />
       </div>
     </div>
