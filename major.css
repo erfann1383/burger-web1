@@ -108,6 +108,7 @@ html {
 .container .BigBur {
   width: 464px;
   height: 384px;
+  filter: drop-shadow(2px 1px 7px white);
 }
 
 .container .good {
@@ -155,6 +156,7 @@ html {
   right: 18rem;
   top: 20rem;
   animation: slideInFromRight 1.5s ease-out forwards;
+  filter: drop-shadow(2px 2px 7px white);
 }
 .inner-circle {
   width: 96px;
