@@ -14,11 +14,26 @@
         src="./img/main-img/Vector Smart Object1.png"
         alt="title"
       />
+
+      <div class="sidebar" id="sidebar">
+        <ul>
+          <li id="home"><a href="./page1.html">More Burger</a></li>
+          <li id="about"><a href="./page2.html">Italian Food</a></li>
+          <li><a href="./src/about/about.html">About us</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
+      </div>
+      
+      <div class="logo-container">
       <img
         class="icon"
+        id="bar"
         src="./icon/main/menu_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg"
         alt="side bar"
       />
+    </div>
+
+
       <div class="BigBur-wrapper">
         <img
           class="BigBur"
@@ -51,40 +66,64 @@
 
     <h1 class="enjoy">CHOOSE & ENJOY</h1>
     <br />
-    <div class="swipe-container">
-      <div class="burgerimg">
-        <img src="./img/main-img/Burger.png" alt="burgerimg" />
-        <h1>LOREM IPSUIM DOLOR</h1>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur <br />
-          adipisicing elit.
-        </p>
-        <button>ORDER NOW</button>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./img/main-img/Burger.png" alt="">
+          <h1>Classic Burger</h1>
+          <p>Enjoy our timeless classic burger.</p>
+          <button id="orderBtn">Order Now</button>
+        </div>
+
+        <div class="swiper-slide">
+          <img src="./img/main-img/Burger Image2.png" alt="">
+          <h1>Cheese Lover</h1>
+          <p>Loaded with extra cheese and love.</p>
+          <button id="orderBtn">Order Now</button>
+        </div>
+
+
+        <div class="swiper-slide">
+          <img src="./img/main-img/Burger.png" alt="">
+          <h1>Spicy King</h1>
+          <p>Hot, spicy and irresistible.</p>
+          <button id="orderBtn">Order Now</button>
+        </div>
+
+
+        <div class="swiper-slide">
+          <img src="./img/main-img/Burger Image2.png" alt="">
+          <h1>Bacon Blast</h1>
+          <p>Full of crispy bacon goodness.</p>
+          <button id="orderBtn">Order Now</button>
+        </div>
+
+
+        <div class="swiper-slide">
+          <img src="./img/main-img/Burger.png" alt="">
+          <h1>Veggie Delight</h1>
+          <p>Healthy and delicious veggie option.</p>
+          <button id="orderBtn">Order Now</button>
+        </div>
+
+        <div class="swiper-slide">
+          <img src="./img/main-img/Burger Image2.png" alt="">
+          <h1>Double Trouble</h1>
+          <p>Twice the meat, twice the fun.</p>
+          <button id="orderBtn">Order Now</button>
+        </div>
       </div>
 
-      <div class="burgerimg">
-        <img src="./img/main-img/Burger Image2.png" alt="burgerimg" />
-        <h1>LOREM IPSUIM DOLOR</h1>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur <br />
-          adipisicing elit.
-        </p>
-        <button>ORDER NOW</button>
-      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
 
-      <div class="burgerimg">
-        <img src="./img/main-img/Burger.png" alt="burgerimg" />
-        <h1>LOREM IPSUIM DOLOR</h1>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur <br />
-          adipisicing elit.
-        </p>
-        <button>ORDER NOW</button>
-      </div>
+     
     </div>
+   
+
     <br />
 
-    <div class="discover">
+     <div class="discover">
       <div class="event">
         <p class="dis">DISCOVER</p>
         <h1>UPCOMING EVENTS</h1>
@@ -98,25 +137,29 @@
       <img src="./img/main-img/Food Image.png" alt="Foodimage" />
     </div>
     <br />
-    
-    <img class="iconn" src="./img/main-img/Vector Smart Object1.png" alt="burgerhouse" />
-    <div class="footer-container">
-      
 
+    <img
+      class="iconn"
+      src="./img/main-img/Vector Smart Object1.png"
+      alt="burgerhouse"
+    />
+    <div class="footer-container">
       <div class="content-left">
-        
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos
           aspernatur, aperiam eum sit aut eveniet autem doloribus dignissimos
-          nobis esse saepe . </p>
-         <p>suscipit reprehenderit neque laborum minima qui
-          explicabo consectetur sunt! Quos, officia rem? Eum similique natus</p>
-          <p class="copyright">@COMPANY NAME 2020. ALL RGHTS RESERVED</p>
+          nobis esse saepe .
+        </p>
+        <p>
+          suscipit reprehenderit neque laborum minima qui explicabo consectetur
+          sunt! Quos, officia rem? Eum similique natus
+        </p>
+        <p class="copyright">@COMPANY NAME 2020. ALL RGHTS RESERVED</p>
       </div>
 
       <div class="contact-box">
         <div class="contact-item">
-          <img src="./icon/main/Location Icon.png" alt="location">
+          <img src="./icon/main/Location Icon.png" alt="location" />
           <p>MAIN ROAD, BUILDING NAME, COUNTRY</p>
         </div>
 
@@ -127,11 +170,14 @@
       </div>
 
       <div class="social-icons">
-        <img src="./icon/main/Instagram.png" alt="">
-        <img src="./icon/main/Twitter.png" alt="">
-        <img src="./icon/main/Facebook.png" alt="">
-        <img src="./icon/main/WhatsApp.png" alt="">
+        <img src="./icon/main/Instagram.png" alt="" />
+        <img src="./icon/main/Twitter.png" alt="" />
+        <img src="./icon/main/Facebook.png" alt="" />
+        <img src="./icon/main/WhatsApp.png" alt="" />
       </div>
     </div>
+
+    <script type="module" src="./index.ts"></script>
   </body>
+
 </html>
