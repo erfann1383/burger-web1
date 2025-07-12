@@ -5,8 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>page2</title>
     <link rel="stylesheet" href="./style.css" />
+    <style>
+      @keyframes animation {
+        from {
+          transform: translateY(-100px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+      .animation {
+        animation: animation 1s ease-out forwards;
+      }
+    </style>
   </head>
-  <body class="m-0 bg-[#111] text-white">
+  <body class="m-0 bg-[#111] text-white animation overflow-x-hidden">
     <div id="container" class="max-w-full mx-0 my-auto">
       <div
         id="header"
@@ -23,10 +39,10 @@
         </div>
         <div
           id="header-img"
-          class="w-1/2 h-auto overflow-hidden relative top-6"
+          class="w-[650px] h-[700px] overflow-hidden relative left-20"
         >
           <img
-            class="w-full object-cover object-right border-8 border-[#5f7d5c]"
+            class="w-full h-full object-cover object-right border-t-8 border-l-8 border-b-8 border-[#5f7d5c]"
             src="./page2-img/Place Your Image Here (Double Click to Edit).png"
             alt="header-img"
           />
@@ -36,50 +52,53 @@
       <div id="menu-1" class="flex justify-between px-48 py-10 mt-10">
         <div
           id="menu1-card1"
-          class="bg-[#1a1a1a] w-52 h-80 p-5 text-center flex flex-col justify-between rounded-xl"
+          class="bg-[#232620] w-[300px] h-[550px] p-5 text-center flex flex-col justify-between items-center"
         >
           <img
-            class="w-full h-40 rounded-lg object-cover"
+            class="w-[250px] h-[250px] rounded-[50%] object-cover border-4 border-[#5f7d5c] relative top-10"
             src="./page2-img/Place Your Image Here (Double Click to Edit)1.png"
             alt="menu-1"
           />
-          <p class="text-white mx-3.5 my-2.5">MENU 1</p>
+          <p class="text-white mx-3.5 my-2.5 text-2xl pt-8">MENU 1</p>
+          <div class="relative bottom-9">________________</div>
           <button
-            class="text-center text-sm border border-white rounded cursor-pointer bg-transparent text-white transition-all duration-1000 ease-in-out hover:bg-[#f5deb3] hover:border-black hover:text-black"
+            class="mb-16 w-32 h-10 text-center pb-1 text-lg border border-white rounded-2xl cursor-pointer bg-transparent text-white transition-all duration-1000 ease-in-out hover:bg-[#f5deb3] hover:border-black hover:text-black"
           >
             order now
           </button>
         </div>
         <div
           id="menu1-card2"
-          class="bg-[#1a1a1a] w-52 h-80 p-5 text-center flex flex-col justify-between rounded-xl"
+          class="bg-[#232620] w-[300px] h-[550px] p-5 text-center flex flex-col justify-between items-center"
         >
           <img
-            class="w-full h-40 rounded-lg object-cover"
+            class="w-[250px] h-[250px] rounded-[150px] object-cover border-4 border-[#5f7d5c] relative top-10"
             src="./page2-img/Place Your Image Here (Double Click to Edit)2.png"
             alt="menu-2"
           />
-          <p class="text-white mx-3.5 my-2.5">MENU 2</p>
+          <p class="text-white text-2xl mx-3.5 my-2.5 pt-8">MENU 2</p>
+          <div class="relative bottom-9">________________</div>
 
           <button
-            class="text-center text-sm border border-white rounded cursor-pointer bg-transparent text-white transition-all duration-1000 ease-in-out hover:bg-[#f5deb3] hover:border-black hover:text-black"
+            class="mb-16 w-32 h-10 pb-1 text-center text-lg border border-white rounded-2xl cursor-pointer bg-transparent text-white transition-all duration-1000 ease-in-out hover:bg-[#f5deb3] hover:border-black hover:text-black"
           >
             order now
           </button>
         </div>
         <div
           id="menu1-card3"
-          class="bg-[#1a1a1a] w-52 h-80 p-5 text-center flex flex-col justify-between rounded-xl"
+          class="bg-[#232620] w-[300px] h-[550px] p-5 text-center flex flex-col justify-between items-center"
         >
           <img
-            class="w-full h-40 rounded-lg object-cover"
+            class="w-[250px] h-[250px] rounded-[50%] object-cover border-4 border-[#5f7d5c] relative top-10"
             src="./page2-img/Place Your Image Here (Double Click to Edit)3.png"
             alt="menu-3"
           />
-          <p class="text-white mx-3.5 my-2.5">MENU 3</p>
+          <p class="text-white mx-3.5 my-2.5 text-2xl pt-8">MENU 3</p>
+          <div class="relative bottom-9">________________</div>
 
           <button
-            class="text-center text-sm border border-white rounded cursor-pointer bg-transparent text-white transition-all duration-1000 ease-in-out hover:bg-[#f5deb3] hover:border-black hover:text-black"
+            class="mb-16 w-32 h-10 text-center pb-1 text-lg border border-white rounded-2xl cursor-pointer bg-transparent text-white transition-all duration-1000 ease-in-out hover:bg-[#f5deb3] hover:border-black hover:text-black"
           >
             order now
           </button>
@@ -88,24 +107,27 @@
 
       <div
         id="banner"
-        class="relative bg-[#aa1f1f] h-60 w-[95%] ml-17.5 mt-20 flex items-center justify-start pl-60 pr-10 overflow-visible"
+        class="bg-red-800 h-96 w-full mt-20 flex items-center justify-start pl-60 pr-10"
       >
-        <div
-          id="pizza-img"
-          class="absolute left-[-110px] bottom-[-60px] w-75 h-auto"
-        >
+        <div id="pizza-img">
           <img
-            class="w-full h-auto rounded-[50%] object-cover"
+            class="w-[500px] h-[500px] rounded-[50%] border-8 border-[#5f7d5c] object-cover relative right-82"
             src="./page2-img/Place Your Image Here (Double Click to Edit)5.png"
             alt="pizza-img"
           />
         </div>
-        <div id="banner-text" class="text-white ml-40">
-          <h2 class="text-5xl m-0 font-[300]">
+        <div id="banner-text" class="text-white">
+          <h2
+            class="text-8xl m-0 font-[300] tracking-[5px] relative bottom-8 font-sans"
+          >
             TAKE <span class="font-bold">NOW</span>
           </h2>
-          <h3 class="text-4xl font-bold mt-2.5 tracking-[2px]">25% OFF</h3>
-          <p class="text-sm italic mt-10 text-[#ffdada]">
+          <h3
+            class="text-black text-7xl font-bold mt-2.5 tracking-[2px] relative left-52 font-mono"
+          >
+            25% OFF
+          </h3>
+          <p class="text-lg italic mt-10 text-black font-mono relative left-32">
             *To be used Monday to Thursday nights
           </p>
         </div>
@@ -115,68 +137,79 @@
         id="fork"
         class="flex justify-between items-center px-20 py-26 gap-12"
       >
-        <div id="fork-text" class="flex-1 text-xl text-white leading-[1.8]">
+        <div
+          id="fork-text"
+          class="flex-1 text-2xl text-white leading-[1.8] mt-16 ml-9"
+        >
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus
-            laborum, cum libero ab perspiciatis ducimus impedit reprehenderit
-            quas quae harum cumque dolorem hic adipisci dolore quidem voluptate,
-            eos eligendi minus.
+            Lorem ipsum dolor, sit amet consecte-
+            <br />tur adipisicing elit. Accusamus laborum, <br />
+            cum libero ab perspiciatis ducimus imp- <br />
+            edit reprehenderit quas quae harum cu- <br />
+            mque dolorem hic adipisci dolore quid- <br />
+            em voluptate, eos eligendi minus.
           </p>
         </div>
-        <div id="fork-img" class="flex flex-1 justify-end">
+        <div id="fork-img" class="flex flex-1 justify-end relative">
           <img
-            class="w-120 h-auto border-4 border-[#5f7d5c] object-cover"
+            class="w-150 h-150 border-l-8 border-b-8 border-r-8 border-[#5f7d5c] object-cover absolute left-20 top-[-265px]"
             src="./page2-img/Place Your Image Here (Double Click to Edit)6.png"
             alt="fork-img"
           />
         </div>
       </div>
 
-      <div id="menu2" class="flex justify-center px-14 py-24 gap-6">
+      <div id="menu2" class="flex justify-between px-48 py-10 mt-20">
         <div
           id="menu2-card1"
-          class="bg-[#2a2a2a] rounded-xl w-52 h-80 p-5 text-center flex flex-col justify-between"
+          class="bg-[#232620] w-[300px] h-[550px] p-5 text-center flex flex-col justify-between items-center"
         >
           <img
-            class="w-full h-40 rounded-lg object-cover"
+            class="w-full h-[55%] object-cover border-4 border-[#5f7d5c] relative top-8"
             src="./page2-img/Place Your Image Here (Double Click to Edit)_.png"
             alt="card-1"
           />
-          <p class="text-white text-lg mx-3.5 my-2.5">MENU 2</p>
+          <p class="text-white mx-3.5 my-2.5 text-2xl pt-10">MENU 2</p>
+          <div class="relative bottom-8">________________</div>
+
           <button
-            class="text-center text-sm border border-white rounded cursor-pointer bg-transparent text-white transition-all duration-1000 ease-in-out hover:bg-[#f5deb3] hover:border-black hover:text-black"
+            class="mb-12 w-32 h-10 pb-1 text-center text-lg border border-white rounded-2xl cursor-pointer bg-transparent text-white transition-all duration-1000 ease-in-out hover:bg-[#f5deb3] hover:border-black hover:text-black"
           >
             order now
           </button>
         </div>
         <div
           id="menu2-card2"
-          class="bg-[#2a2a2a] rounded-xl w-52 h-80 p-5 text-center flex flex-col justify-between"
+          class="bg-[#232620] w-[300px] h-[550px] p-5 text-center flex flex-col justify-between items-center"
         >
           <img
-            class="w-full h-40 rounded-lg object-cover"
+            class="w-full h-[55%] object-cover border-4 border-[#5f7d5c] relative top-8"
             src="./page2-img/Place Your Image Here (Double Click to Edit) 2.png"
             alt="card-1"
           />
-          <p class="text-white text-lg mx-3.5 my-2.5">MENU 2</p>
+          <p class="text-white mx-3.5 my-2.5 text-2xl pt-10">MENU 2</p>
+          <div class="relative bottom-8">________________</div>
+
           <button
-            class="text-center text-sm border border-white rounded cursor-pointer bg-transparent text-white transition-all duration-1000 ease-in-out hover:bg-[#f5deb3] hover:border-black hover:text-black"
+            class="mb-12 w-32 h-10 pb-1 text-center text-lg border border-white rounded-2xl cursor-pointer bg-transparent text-white transition-all duration-1000 ease-in-out hover:bg-[#f5deb3] hover:border-black hover:text-black"
           >
             order now
           </button>
         </div>
         <div
           id="menu2-card3"
-          class="bg-[#2a2a2a] rounded-xl w-52 h-80 p-5 text-center flex flex-col justify-between"
+          class="bg-[#232620] w-[300px] h-[550px] p-5 text-center flex flex-col justify-between items-center"
         >
           <img
-            class="w-full h-40 rounded-lg object-cover"
+            class="w-full h-[55%] object-cover border-4 border-[#5f7d5c] relative top-8"
             src="./page2-img/Place Your Image Here (Double Click to Edit) 1.png"
             alt="card-1"
           />
-          <p class="text-white text-lg mx-3.5 my-2.5">MENU 2</p>
+          <p class="text-white mx-3.5 my-2.5 text-2xl pt-10">MENU 2</p>
+          <div class="relative bottom-8">________________</div>
+
           <button
-            class="text-center text-sm border border-white rounded cursor-pointer bg-transparent text-white transition-all duration-1000 ease-in-out hover:bg-[#f5deb3] hover:border-black hover:text-black"
+            class="mb-12 w-32 h-10 pb-1 text-center text-lg border border-white rounded-2xl cursor-pointer bg-transparent text-white transition-all duration-1000 ease-in-out hover:bg-[#f5deb3] hover:border-black hover:text-black"
           >
             order now
           </button>
